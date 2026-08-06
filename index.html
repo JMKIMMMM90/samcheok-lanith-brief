@@ -260,6 +260,15 @@ footer{padding:44px 0 60px;text-align:center;font-size:12.5px;color:var(--t3);fo
 .pill-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .kv{display:flex;gap:8px;font-size:13.5px;padding:7px 0;font-weight:600}
 .kv .kk{color:var(--t3);width:88px;flex-shrink:0;font-weight:600}
+.ph-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin-top:14px}
+.ph{margin:0;background:var(--bg);border-radius:12px;overflow:hidden}
+.ph img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;background:var(--line)}
+.ph figcaption{padding:10px 11px 12px}
+.ph-n{font-size:14px;font-weight:750;letter-spacing:-0.02em}
+.ph-n .cn{font-size:11.5px;color:var(--t3);font-weight:500}
+.ph-r{font-size:11.5px;color:var(--t2);font-weight:600;margin-top:2px;line-height:1.45}
+.ph-tag{margin-top:6px}
+.ph-m{font-size:11.5px;color:var(--t3);font-weight:500;margin-top:7px;line-height:1.55}
 /* ── 2단 질의 (핵심질문 + 세부질문) ── */
 .qq{background:var(--card);border-radius:var(--r);margin-bottom:10px;box-shadow:var(--shadow);overflow:hidden}
 .qq-top{padding:20px 22px 18px}
@@ -811,7 +820,7 @@ a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(
 
       <h4>발권 인원</h4>
       <p>방문단 명단은 6명이나, 확인된 e-티켓은 <strong>김종현·김재민 2명분</strong>입니다(파일명 仁川2人).
-      국립암센터 4인(신동호·김학수·김태현) 및 신규대 팀장의 발권 상태와 동일편 탑승 여부는 미확인입니다.</p>
+      국립암센터 4인(신동호·김학수·김태현) 및 심규대 팀장의 발권 상태와 동일편 탑승 여부는 미확인입니다.</p>
       <div class="src"><b>출처</b> · 상무님 초안 PPT 2매 / 중국측 Itinerary 텍스트 / <code>01_원본/仁川2人.pdf</code> (2026-07-08 발권, Agent 兰州亚丽航空票务代理有限公司)</div>
     </div>
   </details>
@@ -2036,7 +2045,7 @@ a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(
       <div class="pp">
         <div class="pp-a">신규</div>
         <div>
-          <div class="pp-n">신규대 <span class="cn">삼척시 추진단</span></div>
+          <div class="pp-n">심규대 <span class="cn">삼척시 추진단</span></div>
           <div class="pp-r">팀장</div>
           <div class="pp-m">시설·토목·인허가·운영인력 관점. Q3(가동 안정성)·Q6(인력) 담당.</div>
         </div>
@@ -2176,6 +2185,22 @@ a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(
       </div>
     </div>
   </div>
+
+  <details>
+    <summary>📸 얼굴 확인 — 중국측 주요 인사 사진</summary>
+    <div class="acc-b">
+      <p><strong>공개 링크 버전에서는 인물 사진을 제외했습니다.</strong>
+      실존 인물의 사진을 공개 웹페이지에 재배포하지 않기 위한 조치입니다.
+      사진은 추진단 내부 자료에 포함되어 있으며, 원본은 아래 공식 페이지에서 확인할 수 있습니다.</p>
+      <ul>
+        <li><a href="https://www.lztjlz.com/about/team" target="_blank" rel="noopener">LANITH 공식 경영진 페이지</a>
+          — 마리전(이사장) · 야오쥔지에(총경리) · 판궈화(부총경리) · 주신룽(부총경리) · 리펑(총공정사)</li>
+        <li><a href="https://www.haodf.com/doctor/423577805.html" target="_blank" rel="noopener">장추닝 의료진 프로필</a>
+          — 국과이온(항저우) 부총경리 · 우웨이종양병원 종양내과</li>
+      </ul>
+      <p>양원지에(杨文杰) 항저우 총경리와 실무진 6명은 공개 사진을 찾지 못했습니다.</p>
+    </div>
+  </details>
 
   <div class="alert a-red">
     <div class="ic">🪑</div>
@@ -2592,10 +2617,10 @@ a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(
         <tbody>
           <tr><td class="num hi"><strong>Q1</strong></td><td>갠트리 진행 단계</td><td>신동호 · 김학수<br><span style="color:var(--t3);font-weight:500">의학물리학직</span></td><td class="hi"><strong>마리전</strong> <span style="color:var(--t3);font-weight:500">(이사장)</span><br><span style="color:var(--t3);font-weight:500">초전도 자석 설계 원저자</span></td></tr>
           <tr><td class="num hi"><strong>Q2</strong></td><td>카탈로그 vs 실제 장비</td><td>신동호 · 김학수</td><td>양원지에 <span style="color:var(--t3);font-weight:500">(항저우 총경리·생산 총괄)</span><br>판궈화 <span style="color:var(--t3);font-weight:500">(품질)</span></td></tr>
-          <tr><td class="num"><strong>Q3</strong></td><td>가동 안정성 · 유지보수</td><td>신규대 팀장 + 물리사</td><td>야오쥔지에 <span style="color:var(--t3);font-weight:500">(LANITH 총경리)</span><br>션밍하오 <span style="color:var(--t3);font-weight:500">(PM)</span></td></tr>
+          <tr><td class="num"><strong>Q3</strong></td><td>가동 안정성 · 유지보수</td><td>심규대 팀장 + 물리사</td><td>야오쥔지에 <span style="color:var(--t3);font-weight:500">(LANITH 총경리)</span><br>션밍하오 <span style="color:var(--t3);font-weight:500">(PM)</span></td></tr>
           <tr><td class="num hi"><strong>Q4</strong></td><td>총사업비 · 유지비</td><td>김종현 실장</td><td>마리전 <span style="color:var(--t3);font-weight:500">(이사장)</span><br>양원지에 <span style="color:var(--t3);font-weight:500">("O&amp;M 저렴" 발언 당사자)</span></td></tr>
           <tr><td class="num hi"><strong>Q5</strong></td><td>한국 인허가 가능성</td><td>김종현 실장<br>김재민 팀장</td><td class="hi"><strong>판궈화</strong> <span style="color:var(--t3);font-weight:500">(管理者代表·NMPA 담당)</span></td></tr>
-          <tr><td class="num"><strong>Q6</strong></td><td>운영 인력 · 교육</td><td>신규대 팀장</td><td>션밍하오 <span style="color:var(--t3);font-weight:500">(PM)</span></td></tr>
+          <tr><td class="num"><strong>Q6</strong></td><td>운영 인력 · 교육</td><td>심규대 팀장</td><td>션밍하오 <span style="color:var(--t3);font-weight:500">(PM)</span></td></tr>
           <tr><td class="num"><strong>Q7</strong></td><td>치료 실적 · 성적</td><td>김태현 센터장</td><td class="hi"><strong>장추닝</strong> <span style="color:var(--t3);font-weight:500">(유일한 임상의·논문 39편)</span></td></tr>
           <tr><td class="num hi"><strong>Q8</strong></td><td>환자 유치 방법</td><td>김태현 센터장<br>김종현 실장</td><td>장추닝 · 최성 <span style="color:var(--t3);font-weight:500">(마케팅)</span></td></tr>
         </tbody>
